@@ -1,0 +1,18 @@
+body{
+  background:whitesmoke;
+  padding-top: 20px;
+}
+h1{
+  color:black;
+}
+a{
+  text-decoration: none;
+}
+#film{
+  height: 60px;
+  width: auto;
+  vertical-align: middle;
+}
+#search, #add{
+  color: gray;
+}

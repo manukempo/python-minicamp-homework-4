@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>hw4</title>
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'/>
+</head>
+<body>
+  <h1>Welcome Back To The Movies <img id='film' src='https://cdn.shutterstock.com/shutterstock/videos/766606/thumb/1.jpg?i10c=img.resize(height:160)'/></h1>
+  <form action="{{url_for('search')}}" method='GET'>
+    <h4 id='search'>Looking for a movie?</h4>
+    <input type='text' name='name' />
+    <input type='submit' value='Search' />
+  </form>
+  <br/>
+  <form action='/movie' method='POST'>
+    <h4 id='add'>Add your favorite movie:</h4>
+    <input name='name'/>
+    <input name='year'/>
+    <input type='submit' value='Submit'/>
+  </form>
+  <br/>
+  <a href='/movies' target='_blank'>Movies List</a>
+</body>
+</html>
